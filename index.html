@@ -29079,4 +29079,37 @@ window.pkFilter = function(){
 
 function bzJump(id){ var e=document.getElementById(id); if(e) window.scrollTo({top:e.getBoundingClientRect().top+window.pageYOffset-100,behavior:"smooth"}); }
 </script>
+<style>
+/* ══ v26 · thẻ sản phẩm ở trang danh sách: gọn lại, ảnh nhỏ hơn, giá nhỏ hơn ══ */
+html body #resList .r2{padding:12px!important;gap:16px!important;align-items:center!important}
+html body #resList .r2 .im{width:180px!important;height:120px!important;flex:0 0 180px!important;border-radius:10px}
+html body #resList .r2 .bd2{min-width:0}
+html body #resList .r2 h3{font-size:17px!important;line-height:1.25!important;margin:0!important}
+html body #resList .r2 .loc2{font-size:12.5px!important;margin-top:3px!important;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+html body #resList .r2 .rate2{font-size:12.5px!important;margin-top:3px!important}
+html body #resList .r2 .tg2{margin-top:7px!important;gap:6px!important}
+html body #resList .r2 .tg2 span{font-size:11px!important;padding:3px 8px!important}
+html body #resList .r2 .tg2 span:nth-child(n+4){display:none}
+html body #resList .r2 .pz2{width:186px!important;flex:0 0 186px!important;padding-left:18px!important;gap:8px!important}
+html body #resList .r2 .pz2 .pamt{font-size:18px!important}
+html body #resList .r2 .pz2 .pfrom, html body #resList .r2 .pz2 .punit{font-size:11px!important}
+html body #resList .r2 .pz2 .pold{font-size:12px!important}
+html body #resList .r2 .pz2 .pbtn{height:34px!important;font-size:13px!important;padding:0 14px!important}
+html body #resList .r2 .im .lb, html body #resList .r2 .im .lbp{font-size:10.5px!important;padding:4px 9px!important}
+
+/* điện thoại: ảnh nhỏ bên trái, giá và nút thành một hàng dưới cùng */
+@media (max-width:760px){
+  html body #resList .r2{flex-wrap:wrap!important;padding:10px!important;gap:12px!important;align-items:flex-start!important}
+  html body #resList .r2 .im{width:116px!important;height:92px!important;flex:0 0 116px!important}
+  html body #resList .r2 .bd2{flex:1 1 0!important}
+  html body #resList .r2 h3{font-size:15.5px!important}
+  html body #resList .r2 .loc2{-webkit-line-clamp:2}
+  html body #resList .r2 .tg2{display:none!important}
+  html body #resList .r2 .pz2{flex:1 0 100%!important;width:auto!important;padding:10px 0 0!important;border-left:0!important;
+    border-top:1px solid var(--line-2)!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:10px!important}
+  html body #resList .r2 .pz2 > div:first-child{flex:1 1 auto}
+  html body #resList .r2 .pz2 .pbtn{width:auto!important;flex:0 0 auto;padding:0 18px!important}
+}
+
+</style>
 </body><div></div></html>
